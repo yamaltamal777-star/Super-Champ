@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Menu del Juego</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background-size:400% 400%;
+animation:fondo 10s infinite alternate;
+}
+
+@keyframes fondo{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+.menu{
+display:grid;
+grid-template-columns:200px 200px;
+gap:25px;
+}
+
+.boton{
+height:120px;
+font-size:24px;
+font-weight:bold;
+border:none;
+border-radius:15px;
+cursor:pointer;
+color:white;
+transition:0.3s;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.boton:hover{
+transform:scale(1.1);
+}
+
+.jugar{background:#ff3c3c;}
+.online{background:#ff9d00;}
+.opciones{background:#00a2ff;}
+.salir{background:#7a00ff;}
+
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+
+<button class="boton jugar" onclick="jugar()">JUGAR</button>
+
+<button class="boton online" onclick="online()">ONLINE</button>
+
+<button class="boton opciones" onclick="opciones()">OPCIONES</button>
+
+<button class="boton salir" onclick="salir()">SALIR</button>
+
+</div>
+
+<script>
+
+function jugar(){
+alert("Comenzando el juego...");
+}
+
+function online(){
+alert("Modo online próximamente");
+}
+
+function opciones(){
+alert("Aquí irán las opciones");
+}
+
+function salir(){
+alert("Gracias por jugar");
+}
+
+</script>
+
+</body>
+</html>
